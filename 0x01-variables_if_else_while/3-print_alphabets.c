@@ -13,8 +13,7 @@ int main(void)
 	for (i = 0; 1 < 52; i++)
 {
 	putchar(alp[i]);
-}
+	{
 	putchar('\n');
 	return (0);
-}
-
+	}
