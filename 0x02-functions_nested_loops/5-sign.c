@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_sign - prints the sign of a number
  * @n: The number to be cheked
@@ -7,6 +8,7 @@
 int print_sign(int n)
 
 {
+
 	if (n > 0)
 	{
 	_putchar(43);
