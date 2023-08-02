@@ -14,27 +14,27 @@ size_t print_listint_safe(const listint_t *head);
  */
 size_t looped_listint_len(const listint_t *head)
 {
-	const listint_t *rabbit, *hare;
+	const listint_t *rabbit, *fox;
 	size_t nodes = 1;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
 	rabbit = head->next;
-	hare = (head->next)->next;
+	fox = (head->next)->next;
 
-	while (hare)
+	while (fox)
 	{
-		if (rabbit == hare)
+		if (rabbit == fox)
 		{
 			rabbit = head;
-			while (rabbit != hare)
+			while (rabbit != fox)
 			{
 				nodes++;
 				rabbit = rabbit->next;
-				hare = hare->next;
+				fox = fox->next;
 			}
 			rabbit = rabbit->next;
-			while (rabbit != hare)
+			while (rabbit != fox)
 					{
 					nodes++;
 					rabbit = rabbit->next;
@@ -42,7 +42,7 @@ size_t looped_listint_len(const listint_t *head)
 					return (nodes);
 					}
 					rabbit = rabbit->next;
-					hare = (hare->next)->next;
+					fox = (fox->next)->next;
 					}
 					return (0);
 					}
