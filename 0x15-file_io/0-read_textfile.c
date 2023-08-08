@@ -5,6 +5,7 @@
  * read_textfile - reads a text file
  * and prints it to the posix standard output
  * @letters: the number of letters it should read and print
+ * @filename: text file being read
  *
  * Returns: The atual number of letters it could read and print
  * 0 if file cannot be opened or read, or filename is NULL
